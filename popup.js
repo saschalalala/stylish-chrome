@@ -70,7 +70,8 @@ function parseUrl(url){
 }
 
 function updatePopUp(tab) {
-	updateSiteName(getSiteName(tab.url));
+	updateSiteName(getSiteName("nope"));
+    return false;
 	updateCreateStyleLink(parseUrl(tab.url).hostname);
 
 	var urlWillWork = /^(file|http|https|ftps?|chrome\-extension):/.exec(tab.url);
@@ -101,7 +102,7 @@ function updatePopUp(tab) {
     }
 
 	document.querySelectorAll('#find-styles a').forEach(function (el) {
-		el.href = "https://userstyles.org/styles/browse/all/" +
+		el.href = "http://localhost/styles/browse/all/" +
 			encodeURIComponent("file" === urlWillWork[1] ? "file:" : tab.url);
 	});
 }
@@ -142,7 +143,7 @@ function updateCreateStyleLink(tabDomain){
 }
 
 function updateSiteName(siteName){
-	document.getElementById('sitename').innerHTML = siteName;
+	document.getElementById('sitename').innerHTML = "Feature disabled";
 }
 
 function getSiteName(tabUrl){

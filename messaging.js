@@ -39,6 +39,7 @@ function makePayload(pl) {
 }
 
 function stylesCollector() {
+    return false;
     var _urlToStyles = {};
     var v = chrome.runtime.getManifest().version;
     var lp = "";

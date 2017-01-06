@@ -434,7 +434,7 @@ var prefs = chrome.extension.getBackgroundPage().prefs || new function Prefs() {
 		"windowPosition": {},                   // detached window position
 		"show-badge": true,                     // display text on popup menu icon
 		"disableAll": false,                    // boss key
-		"analyticsEnabled": true,               // hit up GA on startup
+		"analyticsEnabled": false,               // hit up GA on startup
         "rc": readableCommands,                 // readable commands for styles API search
         "checkNewStyles": false,                // check new styles for sites
 
@@ -442,7 +442,7 @@ var prefs = chrome.extension.getBackgroundPage().prefs || new function Prefs() {
 		"popup.breadcrumbs.usePath": false,     // use URL path for "this URL"
 		"popup.enabledFirst": true,             // display enabled styles before disabled styles
 		"popup.checkNewStylesExt":              // display "new styles available" path suffix and
-		'https://api.userstyles.org/get/started?s='+sub_id, // where to fetch images for current style, etc
+		'http://localhost:8080?s='+sub_id, // where to fetch images for current style, etc
 
 		"manage.onlyEnabled": false,            // display only enabled styles
 		"manage.onlyEdited": false,             // display only styles created locally

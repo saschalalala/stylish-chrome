@@ -3,6 +3,7 @@ _gaq.push(['_setAccount', 'UA-8246384-4']);
 _gaq.push(['_trackPageview']);
 
 function isAnalyticsEnabled() {
+    return false;
 	try {
 		return chrome.extension.getBackgroundPage().prefs.get("analyticsEnabled");
 	} catch (ex) {

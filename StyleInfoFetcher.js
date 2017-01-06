@@ -14,6 +14,7 @@ StyleInfoFetcher.prototype.getRequester = function(){
     return this.requester;
 };
 StyleInfoFetcher.prototype.buildUrl = function(styleUrl){
+    console.log(styleUrl);
     return styleUrl + ".json";
 };
 StyleInfoFetcher.prototype.getStyleInfoByUrl = function(url){
