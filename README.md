@@ -1,3 +1,8 @@
+# Note
+This is a personal fork of the Chrome version of the Stylish addon, because the new owner company seems to collect user data and I don't trust the opt out mechanism (that can easily disabled using auto updates). For reference see https://heise.de/-3585601 (German) and https://media.ccc.de/v/33c3-8034-build_your_own_nsa
+
+Also, I really do not need the new style recommendation "feature".
+
 Stylish - a user style manager for Google Chrome and Opera.
 
 ## Releases
